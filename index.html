@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="main.js"></script>
+    <script defer src="db.js"></script>
+    <link rel="stylesheet" href="style/style.css" >
+    <link rel="stylesheet" href="style/normalize.css">
+    <title>Banco</title>
+</head>
+<body>
+    <div class="main">
+        <form class="inicio_sesion">
+                <div class="imagen-perfil"></div>
+                <h1 class="login">Login</h1>
+                <label for="">Usuario</label>
+                <input class="usuario" id="usuario" type="text" name="u">
+                <label class="Password">Password</label>
+                <input class="contrasena" id="contrasena" type="text" name="c">
+                <input class="button" type="button" value="ingresar" onclick="login(this.form)">
+        </form>
+    </div>
+</body>
+</html>

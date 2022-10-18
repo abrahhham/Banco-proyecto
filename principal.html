@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido a tu banco</h1>
+    <label for="">Cuenta 1 Saldo:</label>
+    <input type="text" name="cantidad1" id="c1" value="1,200.00">
+    <label for="">Cuenta 2 Saldo:</label>
+    <input type="text" name="cantidad2" id="c2" value="800.00">
+    <form action="">
+        <h2>Transferencias</h2>
+        <input type="text" name="" id="cant" placeholder="cantidad">
+        <hr>
+        <input type="button" value="Depositar a cuenta " id="bt4" onclick="formula3()">
+        <input type="button" value="Retirar de cuenta" id="bt6" onclick="formula4()">
+
+    </form>
+    <script>
+        function formula() {
+            var cantidadT=parseInt(document.getElementById('cant').value);
+            var cantidad1=parseInt(document.getElementById('c1').value);
+            var cantidad=parseInt(document.getElementById('c2').value);
+            document.getElementById('c1').value=(cantidad1-cantidadT);
+
+        }
+    </script>
+</body>
+</html>
